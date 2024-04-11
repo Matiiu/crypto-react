@@ -84,7 +84,6 @@ body {
 /**** Result *****/
 .result-wrapper {
   margin-top: 5rem;
-
 }
 
 .result-wrapper h2 {
@@ -100,6 +99,8 @@ body {
 
 .result img {
   width: 100%;
+  height: auto;
+  aspect-ratio: 13.7 / 13.7;
 }
 
 .result p {
@@ -109,4 +110,15 @@ body {
 
 .result span {
   font-weight: 700;
+}
+
+@media (width <=600px) {
+  .result {
+    grid-template-columns: auto;
+    justify-items: center;
+    gap: 3rem;
+  }
+  .result img {
+    max-width: 13.75rem;
+  }
 }
